@@ -12,8 +12,8 @@ function whois_config()
     return [
         "name" => "WHOIS for Clients",
         "description" => "WHOIS for Client Area",
-        "version" => "1.0",
-        "author" => "Jarvys"
+        "version" => "0.1",
+        "author" => "Jigar Vyas"
     ];
 }
 
