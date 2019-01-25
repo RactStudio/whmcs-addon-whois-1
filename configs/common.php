@@ -1,4 +1,3 @@
 <?php
 
-define("BRAND_NAME", "whois");
-
+define("BRAND_NAME_WHOIS", "WHOIS");
