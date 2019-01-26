@@ -36,9 +36,19 @@
     {if !empty($whoisData) }
         <div class="panel panel-primary">
             <div class="panel-heading">WHOIS Data for <strong>{$domainName}</strong></div>
+            <br>
+            <div class="row">
+                <div class="col-lg-10 col-md-offset-1">
+                    <div class="alert alert-warning" role="alert">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                        This domain name is {$whoisData['status']}
+                    </div>
+                </div>
+            </div>
+
             <div class="panel-body">
 
-                {$whoisData}
+                {$whoisData['whois']}
 
             </div>
         </div>

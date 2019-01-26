@@ -49,10 +49,9 @@ class WHOISController
 
             $variables['domainName'] = $domainName;
 
-            $whoisData = $this->getWHOISDetails($domainName)['whois'];
-            var_dump($whoisData);
+            $whoisData = $this->getWHOISDetails($domainName);
 
-            if (is_null($whoisData)) {
+            if (is_null($whoisData['status'])) {
 
                 $variables['whoisData'] = MESSAGES_WHOIS['whois_data_not_found'];
             } else {
